@@ -15,7 +15,7 @@ app.set("view engine", "ejs");
 
 // route
 app.get("/", (req, res) => {
-    res.send("Home page");
+    res.send("Home page kkk");
 });
 app.get("/about", (req, res) => res.send("<h1>About page</h1>"));
 
