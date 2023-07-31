@@ -13,6 +13,9 @@ const hostname = process.env.HOST_NAME;
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
+// config static files
+app.use(express.static(path.join(__dirname, "public")));
+
 // route
 app.get("/", (req, res) => {
     res.send("Home page kkk");
